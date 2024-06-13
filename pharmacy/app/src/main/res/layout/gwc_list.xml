@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_horizontal"
+    >
+
+    <TextView
+        android:id="@+id/gwc_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="药名"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/gwc_list_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/gwc_list_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="药类型"
+        />
+    <TextView
+        android:id="@+id/gwc_list_jj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_gravity="start"
+        android:text="简介简介简介简介"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textSize="30dp"
+                android:textColor="#EA0909"
+                android:gravity="end"
+                />
+
+            <TextView
+                android:id="@+id/gwc_list_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:textSize="30dp"
+                android:textColor="#EA0909"
+                android:layout_gravity="end"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.userRegisterActivity">
+
+    <TextView
+        android:id="@+id/drugid_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="药 品  i d"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/drug_add_id_edittext"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/drugid_text" />
+
+
+    <TextView
+        android:id="@+id/drugname_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drugid_text"
+        android:layout_marginTop="30dp"
+        android:text="药品名称"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/drug_add_name_edittext"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drug_add_id_edittext"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/drugname_text" />
+
+    <TextView
+        android:id="@+id/drugtype_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drugname_text"
+        android:layout_marginTop="40dp"
+        android:text="药品类型"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/drug_add_type_edittext"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/drugtype_text"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/drug_add_name_edittext"/>
+
+    <TextView
+        android:id="@+id/userprice_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drugtype_text"
+        android:layout_marginTop="40dp"
+        android:text="药品价格"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/drug_add_price_edittext"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/userprice_text"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/drug_add_type_edittext"
+        />
+
+    <TextView
+        android:id="@+id/userjj_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drug_add_price_edittext"
+        android:layout_marginTop="30dp"
+        android:text="药品简介"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/drug_add_jj_edittext"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/userjj_text"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/drug_add_price_edittext"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userjj_text"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/drug_add_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userjj_text"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="100dp"
+            android:layout_weight="1"
+            android:text="添加"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/drug_add_back_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userjj_text"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@id/drug_add_btn"
+            android:layout_weight="1"
+            android:text="返回"
+            android:textSize="30dp" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
